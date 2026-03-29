@@ -1,0 +1,15 @@
+{
+  "name": "mabot",
+  "version": "1.0.0",
+  "description": "MaBot - Multi-Agent Household Coordination Platform",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["household", "coordination", "multi-agent", "react", "node", "mongodb"],
+  "author": "MaBot Team",
+  "license": "MIT"
+}

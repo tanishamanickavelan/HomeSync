@@ -1,0 +1,12 @@
+const express = require('express');
+const { protect, requireFamily } = require('../middleware/auth');
+const { getGroceries, createGrocery, updateGrocery, deleteGrocery, markAllPurchased, getGroceryStats } = require('../controllers/groceryController');
+const router = express.Router();
+router.use(protect, requireFamily);
+router.get('/stats', getGroceryStats);
+router.get('/', getGroceries);
+router.post('/', createGrocery);
+router.put('/mark-all-purchased', markAllPurchased);
+router.put('/:id', updateGrocery);
+router.delete('/:id', deleteGrocery);
+module.exports = router;

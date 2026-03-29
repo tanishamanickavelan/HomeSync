@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "mabot-client",
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "@mabot_api_url"
+  }
+}

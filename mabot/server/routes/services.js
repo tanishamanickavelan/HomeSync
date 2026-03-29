@@ -1,0 +1,10 @@
+const express = require('express');
+const { protect, requireFamily } = require('../middleware/auth');
+const { getServices, createService, updateService, deleteService } = require('../controllers/serviceController');
+const router = express.Router();
+router.use(protect, requireFamily);
+router.get('/', getServices);
+router.post('/', createService);
+router.put('/:id', updateService);
+router.delete('/:id', deleteService);
+module.exports = router;

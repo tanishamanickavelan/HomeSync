@@ -1,0 +1,11 @@
+const express = require('express');
+const { protect, requireFamily } = require('../middleware/auth');
+const { getBills, createBill, updateBill, deleteBill, getBillStats } = require('../controllers/billController');
+const router = express.Router();
+router.use(protect, requireFamily);
+router.get('/stats', getBillStats);
+router.get('/', getBills);
+router.post('/', createBill);
+router.put('/:id', updateBill);
+router.delete('/:id', deleteBill);
+module.exports = router;
