@@ -36,4 +36,16 @@ router.delete('/:id', async (req, res) => {
   } catch { res.status(500).json({ success: false }); }
 });
 
+const { runAgentOrchestration } = require('../services/orchestrator');
+
+// Test route — trigger agents manually
+router.post('/trigger-agents', async (req, res) => {
+  try {
+    await runAgentOrchestration();
+    res.json({ success: true, message: 'Agents triggered!' });
+  } catch (e) {
+    res.status(500).json({ success: false, message: e.message });
+  }
+});
+
 module.exports = router;
