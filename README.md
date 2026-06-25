@@ -1,8 +1,8 @@
-# 🏠 MaBot — AI-Powered Household Coordination Platform
+# 🏠 HomeSync — AI-Powered Household Coordination Platform
 
 > Multi-agent household coordination platform designed for dual-income families in Tier-1 and Tier-2 Indian cities.
 
-![MaBot](https://img.shields.io/badge/MaBot-v1.0.0-teal)
+![HomeSync](https://img.shields.io/badge/HomeSync-v1.0.0-teal)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-green)
@@ -11,13 +11,13 @@
 
 # 📋 Overview
 
-MaBot helps families efficiently manage daily household operations through intelligent task coordination, automated reminders, and AI-driven notification agents.
+HomeSync helps families efficiently manage daily household operations through intelligent task coordination, automated reminders, and AI-driven notification agents.
 
 ## Problem Statement
 
 Dual-income families often struggle to coordinate household responsibilities, track bills, manage groceries, schedule services, and stay informed about important events.
 
-MaBot addresses this challenge through an AI-driven multi-agent coordination system that automates reminders, tracks household activities, and ensures all family members remain synchronized through centralized management and email notifications.
+HomeSync addresses this challenge through an AI-driven multi-agent coordination system that automates reminders, tracks household activities, and ensures all family members remain synchronized through centralized management and email notifications.
 
 ## Features
 
@@ -67,7 +67,7 @@ MaBot addresses this challenge through an AI-driven multi-agent coordination sys
 
 # 📧 Email Notification System
 
-MaBot includes an automated email notification system powered by:
+HomeSync includes an automated email notification system powered by:
 
 * Gmail SMTP
 * Nodemailer
